@@ -1,4 +1,5 @@
 /*
+
     eslint, a linting tool for detecting errors in your javascript files and also formats js files,
     if you're using prettier (which we are), we probably don't need to use eslint for formatting, but for linting.
 */
