@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    image: 'sl-frontend'
+    build: .
+    container_name: sl-frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - .:sl-frontend
+      - .:node_modules
+    stdin_open: true
+    tty: true
