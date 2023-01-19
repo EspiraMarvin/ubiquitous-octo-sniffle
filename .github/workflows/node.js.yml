@@ -27,5 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - run: yarn
+    - run: yarn prettier:format
     - run: yarn build
     - run: yarn test
