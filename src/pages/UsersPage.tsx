@@ -3,7 +3,7 @@ import { fetchUsers, fetchAllAlbums } from '../services/requests'
 import Loader from '../components/ui/Loader'
 import UsersList from '../components/users/UsersList'
 import useTitle from '../hooks/useTitle'
-import { Album, UserAlbum } from '../typings'
+import { Album, UserAlbum } from '../interfaces/typings'
 
 function UsersPage() {
   useTitle('Users List')
