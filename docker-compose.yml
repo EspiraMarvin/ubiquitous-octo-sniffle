@@ -2,7 +2,7 @@ version: '3.8'
 services:
   app:
     image: 'sl-frontend'
-    build: .
+    build: ./
     container_name: sl-frontend
     ports:
       - '3000:3000'
