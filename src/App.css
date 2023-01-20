@@ -1,38 +1,26 @@
 .App {
-  text-align: center;
+  position: relative;
+  height: 100vh;
+  font-family: 'Varela Round', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  @apply px-4 bg-blue-600 rounded border-black  h-10 text-white hover:bg-gradient-to-br from-blue-900 via-purple-800 to-purple-900 transition-all; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.largeScreenBtnPosition {
+  @apply  h-7 hidden md:block absolute top-[80px] md:left-[70px] lg:left-[140px]  xl:left-[200px] 2xl:left-[400px]
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pageMargin {
+  @apply px-4 sm:px-10 md:px-16 lg:px-36 xl:px-48 2xl:px-96;
 }
 
-.App-link {
-  color: #61dafb;
+.pageCenter {
+  @apply flex justify-center items-center h-screen
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient {
+  @apply bg-gradient-to-br from-indigo-200 via-indigo-100 to-indigo-500;
 }
