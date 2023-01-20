@@ -17,10 +17,6 @@ Sentry.init({
   tracesSampleRate: 1.0,
 })
 
-console.log(
-  'process.env.REACT_SENTRY_AUTH_TOKEN',
-  process.env.REACT_SENTRY_AUTH_TOKEN
-)
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
