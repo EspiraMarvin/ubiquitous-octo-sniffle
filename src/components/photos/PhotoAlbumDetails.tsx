@@ -59,7 +59,7 @@ function PhotoDetails() {
           placeholder={
             <div className="w-28 h-28 text-white bg-gray-200 rounded-xl"> </div>
           }
-          alt=""
+          alt="photo"
         />
       </div>
       <div className="mt-3 ml-3">
