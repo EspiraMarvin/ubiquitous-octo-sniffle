@@ -43,6 +43,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 - ▶️ JEST & React Testing Library
 - ▶️ Jsonplaceholder api
 - ▶️ Sentry for logging
+- ▶️ Docker for containerization
+- ▶️ Prettier and Eslint for code formatting and linting
+
 
 ## **Build link 🧪**
 [https://ubiquitous-octo-sniffle.vercel.app](https://ubiquitous-octo-sniffle.vercel.app)
@@ -50,3 +53,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 **Note: After updating a photo title, don't refresh the page, this may trigger an network fetch to get the original photos from the placeholder api as the photos are not saved in localstorage but in the context hook!!**
 
+
+
+### `docker-compose up --build`
+
+Run the command above to build locally with docker
