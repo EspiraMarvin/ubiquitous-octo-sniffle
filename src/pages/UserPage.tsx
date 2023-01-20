@@ -41,7 +41,7 @@ function UserPage() {
     <div className="pageMargin mt-20 sm:mt-16">
       <section className="mb-8 flex flex-row text-left items-center justify-center">
         <Link to={'/users'}>
-          <button className="button largeScreenBtnPosition">Go Back</button>
+          <button className="button largeScreenBtnPosition ">Go Back</button>
         </Link>
 
         <div className="text-xl mt-4 text-center">{user?.name} Information</div>
