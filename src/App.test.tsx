@@ -14,8 +14,7 @@ const MockApp = () => {
 describe('<App />', () => {
   it('should render the correct page on initial app launch', async () => {
     render(<MockApp />)
-    // SIL Frontend
-    const pageInformation = screen.getAllByText(/MARINSZFASFZDO;/i)
+    const pageInformation = screen.getAllByText(/SIL Frontend;/i)
     expect(pageInformation).toBeTruthy()
   })
 })
