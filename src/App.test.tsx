@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { BrowserRouter, MemoryRouter } from 'react-router-dom'
-import userEvent from '@testing-library/user-event'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 
 const MockApp = () => {
