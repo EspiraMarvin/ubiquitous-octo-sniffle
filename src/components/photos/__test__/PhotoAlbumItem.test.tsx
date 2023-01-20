@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import PhotoAlbumItem from '../PhotoAlbumItem'
 import { BrowserRouter } from 'react-router-dom'
 

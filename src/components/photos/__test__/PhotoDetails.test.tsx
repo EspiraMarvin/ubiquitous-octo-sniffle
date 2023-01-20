@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import PhotoAlbumDetails from '../PhotoAlbumDetails'
 import { BrowserRouter } from 'react-router-dom'
 import AppProvider from '../../../context/AppContext'
