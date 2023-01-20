@@ -4,6 +4,7 @@
     if you're using prettier (which we are), we probably don't need to use eslint for formatting, but for linting.
 */
 {
+  // "extends": ["prettier", "plugin:@typescript-eslint/recommended"],
   "extends": ["prettier"],
   "rules": {}
 }
