@@ -1,23 +1,24 @@
 import useTitle from '../hooks/useTitle'
 import useAuth from '../hooks/useAuth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import Loader from '../components/ui/Loader'
+import { useEffect } from 'react'
 
 function HomePage() {
   useTitle('Home')
-  const { loading, signInWithGoogle } = useAuth()
+  const { loading, signInWithGoogle, user } = useAuth()
   const navigate = useNavigate()
 
   let authToken = sessionStorage.getItem('AuthToken')
-  // if (authToken) {
-  //   navigate(-1)
-  // }
-  // if (authToken)
-  //   return (
-  //     <div className="pageCenter">
-  //       <Loader />
-  //     </div>
-  //   )
+
+  useEffect(() => {
+    if (authToken && user) {
+      navigate('/users')
+    } else if (!authToken) {
+      navigate('/')
+    }
+  }, [authToken])
+
   return (
     <div className="h-screen pt-10 pageMargin md:pt-20 lg:pt-44">
       <div className="p-10 text-lg font-bold text-center md:text-2xl">
@@ -42,11 +43,8 @@ function HomePage() {
           className="w-56 button"
           disabled={loading}
           onClick={signInWithGoogle}
-          data-testid="login-btn"
         >
-          <span data-testid="login-label">
-            {loading ? 'Loading ....' : 'Continue with Google'}
-          </span>
+          <span>{loading ? 'Loading ....' : 'Continue with Google'}</span>
         </button>
       </div>
     </div>
