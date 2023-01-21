@@ -7,7 +7,7 @@ interface AlbumPhotoItemProps {
 
 function AlbumPhotoItem({ photo }: AlbumPhotoItemProps) {
   return (
-    <div className="flex items-center m-4 pl-2 py-1 cursor-pointer hover:bg-gray-50">
+    <div className="flex items-center mx-4 ml-2 my-3 cursor-pointer hover:bg-gray-50">
       <LazyLoadImage
         className="w-10 h-10 rounded-full contain"
         src={photo?.thumbnailUrl}
