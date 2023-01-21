@@ -51,7 +51,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 [https://ubiquitous-octo-sniffle.vercel.app](https://ubiquitous-octo-sniffle.vercel.app)
 
 
-**Note: After updating a photo title, don't refresh the page, this may trigger an network fetch to get the original photos from the placeholder api as the photos are not saved in localstorage but in the context hook!!**
+**Note: After updating a photo title, don't refresh the page, this may trigger a network refetch to get the original photos from the placeholder api as the photos are not saved in localstorage but in the context hook!!**
 
 
 
