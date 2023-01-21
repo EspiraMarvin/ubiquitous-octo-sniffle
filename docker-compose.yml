@@ -1,9 +1,9 @@
 version: '3.8'
 services:
   app:
-    image: 'sl-frontend'
-    build: ./
-    container_name: sl-frontend
+    image: 'sl-frontend_i'
+    build: .
+    container_name: sl-frontend_c
     ports:
       - '3000:3000'
     volumes:
