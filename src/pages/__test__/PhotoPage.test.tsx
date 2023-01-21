@@ -15,11 +15,11 @@ describe('Photo Page', () => {
   })
 
   it('should have the correct document title', async () => {
-    await waitFor(() => expect(document.title).toEqual('Album Photo Details'))
+    await waitFor(() => expect(document.title).toEqual('Photo Album Details'))
   })
 
   it('should render correct page title', async () => {
-    const PhotoDetailsTitle = screen.getByText(/Album Photo Details/i)
+    const PhotoDetailsTitle = screen.getByText(/Photo Album Details/i)
     expect(PhotoDetailsTitle).toBeInTheDocument()
   })
 })
