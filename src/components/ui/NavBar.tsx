@@ -20,7 +20,7 @@ export default function NavBar(): any {
             <div className="flex items-center justify-evenly md:justify-between py-2 md:py-2">
               {pathname !== '/users' && (
                 <button
-                  className="button h-7 absolute left-2 top-2 md:hidden"
+                  className="button h-7 absolute left-2 top-3 md:hidden"
                   onClick={() => navigate(-1)}
                 >
                   Back{' '}
@@ -74,7 +74,7 @@ export default function NavBar(): any {
             >
               <div className="flex flex-col mt-1 items md:hidden">
                 <div
-                  className="inline-block w-full px-4 py-4 text-center text-gray-800 bg-white rounded-md shadow cursor-pointer hover:bg-gray-100"
+                  className="inline-block w-full px-4 py-4 text-center text-white bg-black rounded-md shadow cursor-pointer hover:bg-gray-100"
                   onClick={logOut}
                 >
                   Sign Out
