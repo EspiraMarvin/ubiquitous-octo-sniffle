@@ -46,7 +46,7 @@ function AlbumPage() {
 
   return (
     <div className="pageMargin mt-20 sm:mt-16">
-      <section className="flex flex-row text-left items-center justify-center">
+      <section className="flex flex-row text-left items-center justify-center mt-20">
         <button
           className="button largeScreenBtnPosition"
           onClick={() => navigate(-1)}
@@ -57,7 +57,7 @@ function AlbumPage() {
       </section>
       <section>
         <AlbumInfo albumInfo={albumInfo} />
-        <div className="h-full max-h-screen overflow-y-auto">
+        <div className="h-[75vh] max-h-screen  overflow-y-auto">
           <PhotoAlbumList
             userId={Number(userId)}
             albumId={Number(albumId)}

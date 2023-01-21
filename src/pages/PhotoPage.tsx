@@ -1,13 +1,13 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import useTitle from '../hooks/useTitle'
 import PhotoAlbumDetails from '../components/photos/PhotoAlbumDetails'
 
 function PhotoPage() {
-  useTitle('Album Photo Details')
+  useTitle('Photo Album Details')
   const navigate = useNavigate()
 
   return (
-    <div className="pageMargin mt-20 sm:mt-16 ">
+    <div className="pt-20 pageMargin sm:pt-16">
       <section className="flex flex-row items-center justify-center mb-8 text-left">
         <button
           className="button largeScreenBtnPosition"
@@ -15,9 +15,8 @@ function PhotoPage() {
         >
           Go Back{' '}
         </button>
-        <div className="mt-4 text-xl text-center">Album Photo Details</div>
+        <div className="mt-4 text-xl text-center"> Photo Album Details</div>
       </section>
-      {/* PhotoAlbumDetails */}
       <section className="flex items-center justify-center">
         <PhotoAlbumDetails />
       </section>

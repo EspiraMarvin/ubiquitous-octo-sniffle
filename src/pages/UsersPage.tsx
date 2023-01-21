@@ -36,15 +36,14 @@ function UsersPage() {
 
   if (loading)
     return (
-      <div className="flex mt-28 justify-center items-center">
+      <div className="flex items-center justify-center mt-28">
         <Loader />
       </div>
     )
 
   return (
-    <div className="pageMargin">
-      {/* <Header title={'Users List'} /> */}
-      <header className="mt-8 md:mt-20 mb-8 text-center text-xl">
+    <div className="pt-12 pageMargin sm:pt-16 md:pt-0">
+      <header className="mt-8 mb-8 text-xl text-center md:mt-20">
         Users List
       </header>
       <section>
