@@ -5,10 +5,26 @@ import { BrowserRouter } from 'react-router-dom'
 
 let data = {
   name: 'Leanne Graham',
-  albumCount: 10,
+  albumCount: '10',
   userId: 1,
-  id: 1,
+  id: '1',
   title: 'madsoi sdsd',
+  username: 'Ervin',
+  email: 'Ervin@gmail.com',
+  address: {
+    street: 'nai',
+    suite: 'sur3',
+    city: 'mbs',
+    zipcode: '234sd',
+  },
+  phone: '2343525345',
+  website: 'facebook.com',
+  geo: { lat: '234232', lng: '93234' },
+  company: {
+    name: 'company 1',
+    catchPhrase: 'kompany 1',
+    bs: 'bss',
+  },
 }
 const MockUserListItem = () => {
   return (

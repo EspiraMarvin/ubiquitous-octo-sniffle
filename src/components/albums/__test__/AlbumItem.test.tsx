@@ -8,7 +8,6 @@ const MockAlbumItem = () => {
       <AlbumItem
         user={{
           name: 'Ervin Howel',
-          albumCount: '10',
           id: '1',
           username: 'Ervin',
           email: 'Ervin@gmail.com',
