@@ -31,6 +31,7 @@ export const PhotoProvider = ({ children }: { children: ReactNode }) => {
     fetchData()
   }, [])
 
+  // update photo title
   const updateTitle = async (photoDetails: Photo) => {
     setLoading(true)
     const data = await updatePhotoTitle(photoDetails)
@@ -53,6 +54,7 @@ export const PhotoProvider = ({ children }: { children: ReactNode }) => {
     return data
   }
 
+  // get photos for a single album
   const filterAlbumPhotos = async (albumId: string) => {
     const res = photos.filter((photo: Photo) => {
       return photo.albumId === Number(albumId)
@@ -60,6 +62,7 @@ export const PhotoProvider = ({ children }: { children: ReactNode }) => {
     return res
   }
 
+  // get single photo album
   const findPhoto = async (photoId: string) => {
     const res = photos.find((photo: Photo) => {
       return photo.id === Number(photoId)

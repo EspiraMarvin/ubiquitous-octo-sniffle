@@ -15,6 +15,7 @@ function UserPage() {
   const [userAlbums, setUserAlbums] = useState([])
 
   useEffect(() => {
+    // fetch user information and user's albums
     const fetchUserInfoAndAlbums = async () => {
       const [userRes, userAlbumsRes] = await Promise.all([
         fetchUser(userId),
@@ -32,19 +33,19 @@ function UserPage() {
 
   if (!user || !userAlbums)
     return (
-      <div className="flex h-screen justify-center items-center">
+      <div className="flex items-center justify-center h-screen">
         <Loader color="blue" />
       </div>
     )
 
   return (
-    <div className="pageMargin mt-20 sm:mt-16">
-      <section className="mb-8 flex flex-row text-left items-center justify-center">
+    <div className="mt-20 pageMargin sm:mt-16">
+      <section className="flex flex-row items-center justify-center mb-8 text-left">
         <Link to={'/users'}>
           <button className="button largeScreenBtnPosition ">Go Back</button>
         </Link>
 
-        <div className="text-xl mt-4 text-center">{user?.name} Information</div>
+        <div className="mt-4 text-xl text-center">{user?.name} Information</div>
       </section>
       <section>
         <UserDetails user={user} />

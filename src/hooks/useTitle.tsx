@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 
+// document title hook
 const useTitle = (title: string) => {
   useEffect(() => {
     ;(async () => {

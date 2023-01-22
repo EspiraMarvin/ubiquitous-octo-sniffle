@@ -12,6 +12,7 @@ function UsersPage() {
   const [loading, setLoading] = useState<boolean>(false)
 
   useEffect(() => {
+    // fetch users and their individual total album
     const fetchUsersAndAlbums = async () => {
       setLoading(true)
       const [albumsRes, usersRes] = await Promise.all([
