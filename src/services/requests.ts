@@ -9,7 +9,7 @@ const fetchAllAlbums = async () => {
 }
 
 const fetchUserAlbums = async (userId?: string) => {
-  const { data } = await axios.get(`${BASE_URL}/users/${userId}/albums`)
+  const { data } = await axios.get<Album>(`${BASE_URL}/users/${userId}/albums`)
   return data
 }
 
@@ -40,7 +40,7 @@ const fetchPhoto = async (photoId?: string) => {
 }
 
 const fetchAllPhotos = async () => {
-  const { data } = await axios.get(`${BASE_URL}/photos`)
+  const { data } = await axios.get<Photo[]>(`${BASE_URL}/photos`)
   return data
 }
 
