@@ -9,7 +9,7 @@ const fetchAllAlbums = async () => {
 }
 
 const fetchUserAlbums = async (userId?: string) => {
-  const { data } = await axios.get<Album>(`${BASE_URL}/users/${userId}/albums`)
+  const { data } = await axios.get(`${BASE_URL}/users/${userId}/albums`)
   return data
 }
 
