@@ -14,23 +14,23 @@ export default function NavBar(): any {
     user &&
     authToken &&
     !unprotectedRoutes.includes(pathname) && (
-      <nav className="fixed top-0 z-10 w-full px-2 py-1 md:py-2 h-16 md:h-14 shadow bg-black md:px-5">
-        <div className="justify-evenly md:justify-between px-4 mx-auto md:flex items-center md:px-8 lg:max-w-7xl">
+      <nav className="fixed top-0 z-10 w-full h-16 px-2 py-1 bg-black shadow md:py-2 md:h-14 md:px-5">
+        <div className="items-center px-4 mx-auto justify-evenly md:justify-between md:flex md:px-8 lg:max-w-7xl">
           <div>
-            <div className="flex items-center justify-evenly md:justify-between py-2 md:py-2">
+            <div className="flex items-center py-2 justify-evenly md:justify-between md:py-2">
               {pathname !== '/users' && (
                 <button
-                  className="button h-7 absolute left-2 top-3 md:hidden"
+                  className="absolute button h-7 left-2 top-3 md:hidden"
                   onClick={() => navigate(-1)}
                 >
                   Back{' '}
                 </button>
               )}
-              <div className="text-white text-center mt-1">SIL FRONTEND</div>
+              <div className="mt-1 text-center text-white">SIL FRONTEND</div>
 
               <div className="md:hidden">
                 <button
-                  className="p-3 rounded-md outline-none focus:border focus:border-gray-400 absolute right-3 top-2"
+                  className="absolute p-3 rounded-md outline-none focus:border focus:border-gray-400 right-3 top-2"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
@@ -91,7 +91,7 @@ export default function NavBar(): any {
               )}
             </div>
             <div
-              className="flex items-center p-1 cursor-pointer text-white/70  hover:text-white transition-all"
+              className="flex items-center p-1 transition-all cursor-pointer text-white/70 hover:text-white"
               onClick={logOut}
             >
               {loading ? 'Loading..' : 'LogOut'}

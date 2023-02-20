@@ -5,12 +5,11 @@
 }
 
 .button {
-  @apply px-4 bg-blue-600 rounded border-black  h-10 text-white hover:bg-gradient-to-br from-blue-900 via-purple-800 to-purple-900 transition-all; 
+  @apply px-4 bg-blue-600 rounded border-black  h-10 text-white hover:bg-gradient-to-br from-blue-900 via-purple-800 to-purple-900 transition-all;
 }
 
 .largeScreenBtnPosition {
-  @apply  h-7 hidden md:block absolute top-[80px] md:left-[70px] lg:left-[140px]  xl:left-[200px] 2xl:left-[400px]
- 
+  @apply h-7 hidden md:block absolute top-[80px] md:left-[70px] lg:left-[140px]  xl:left-[200px] 2xl:left-[400px];
 }
 
 .pageMargin {
@@ -18,7 +17,7 @@
 }
 
 .pageCenter {
-  @apply flex justify-center items-center h-screen
+  @apply flex justify-center items-center h-screen;
 }
 
 .gradient {
