@@ -2,5 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 yarn tsc
+yarn prettier:check
 # yarn prettier
 # yarn test
